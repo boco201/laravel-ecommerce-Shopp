@@ -6,26 +6,6 @@
 
     <div class="container-fluid"style="padding-top: 50px;">
        <div class="row">
-         <div class="col-md-1">
-               <h1>Titre 1</h1>
-               <p>10 Trending 2019 Website Color Schemes
-Published on JANUARY 10, 2019
-
-There’s a lot to take into consideration when you’re designing a website: there’s the layout, the architecture, the CTAs, picking your domain name, setting up a host, configuring the backend, picking a theme, perfecting jour
-
-
-
-
-
-r audience, you</p>
-               <h2>Titre 2</h2>
-               <p>10 Trending 2019 Website Color Schemes
-Published on JANUARY 10, 2019
-
-There’s a lot to take into consideration when you’re designing a website: there’s the layout, the architecture, the CTAs, 
-               <h3>Titre 3</h3>
-               <p></p>
-            </div>
             <div class="col-md-10">
                      <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -114,7 +94,7 @@ There’s a lot to take into consideration when you’re designing a website: th
             </div>
         </div>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-2">
                <h1>Titre 1</h1>
                <p>10 Trending 2019 Website Color Schemes
 Published on JANUARY 10, 2019

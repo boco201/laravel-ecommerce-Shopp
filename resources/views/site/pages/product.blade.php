@@ -135,6 +135,38 @@
                 </div>
             </div>
         </div>
+                 <div class="container mt-4">
+    <h3 style="color: blue; font-weight: bold;font-style: italic;">Votre Opinion sur ce produit! on a besoin!</h3>
+    <form method="post" action="/products/comments">
+        @csrf
+        <div class="form-group">
+           <label for="author">Auteur: </label> 
+           <input type="text" name="author" class="form-control">
+           <div>{{ $errors->first('author') }}</div>
+        </div>
+
+        <div class="form-group">
+           <label for="comments">Commentaires: </label>  
+           <textarea name="comments" class="form-control" rows="7" cols="10"></textarea>
+           <input type="hidden" name="product_id" value="{{ $product->id }}">
+           <div>{{ $errors->first('comments') }}</div>
+        </div>
+
+
+        <div>
+           <button type="submit" class="btn btn-primary">Ajouter votre opinion</button>
+        </div>
+
+    </form>
+</div><br>
+<div class="container">
+    @foreach($product->comments as $comment)
+      <h3><a href=""> Auteur: {{ $comment->author }}</a> </h3>
+      <p>Commentaire: {{ $comment->comments}}</p>
+      <p style="color: red;font-style: italic;font-weight: bold; margin-top: 10px;">Date création: {{ $comment->created_at->diffForHumans() }}</p>
+    @endforeach
+
+</div>
     </section>
 @stop
 @push('scripts')

@@ -35,6 +35,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('checkout/payment/complete', 'Site\CheckoutController@complete')->name('checkout.payment.complete');
 
     Route::get('account/orders', 'Site\AccountController@getOrders')->name('account.orders');
+
+    Route::post('/products/comments', 'Site\CommentsController@store')->name('products.comments.store');
+
+    Route::get('/products/comments/{product}', 'Site\CommentsController@show');
 });
 
 Auth::routes();
