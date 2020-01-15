@@ -19,6 +19,6 @@ class CategoriesTableSeeder extends Seeder
             'menu'          =>  0,
         ]);
 
-        factory('App\Models\Category', 10)->create();
+        factory('App\Models\Category', 14)->create();
     }
 }

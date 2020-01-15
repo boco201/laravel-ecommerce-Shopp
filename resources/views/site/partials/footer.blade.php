@@ -1,6 +1,6 @@
 <!-- ========================= FOOTER ========================= -->
-<footer class="section-footer bg-dark white">
-    <div class="container">
+<footer class="section-footer  white">
+    <div class="container-fluid">
         <section class="footer-top padding-top">
             <div class="row">
                 <aside class="col-sm-3 col-md-3 white">

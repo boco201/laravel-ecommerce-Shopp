@@ -2,12 +2,12 @@
 @section('title', $product->name)
 @section('content')
     <section class="section-pagetop bg-dark">
-        <div class="container clearfix">
+        <div class="container-fluid clearfix">
             <h2 class="title-page">{{ $product->name }}</h2>
         </div>
     </section>
     <section class="section-content bg padding-y border-top" id="site">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
                     @if (Session::has('message'))

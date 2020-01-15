@@ -2,12 +2,12 @@
 @section('title', $category->name)
 @section('content')
 <section class="section-pagetop bg-dark">
-    <div class="container clearfix">
+    <div class="container-fluid clearfix">
         <h2 class="title-page">{{ $category->name }}</h2>
     </div>
 </section>
 <section class="section-content bg padding-y">
-    <div class="container">
+    <div class="container-fluid">
         <div id="code_prod_complex">
             <div class="row">
                 @forelse($category->products as $product)
