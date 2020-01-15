@@ -1,5 +1,5 @@
 <!-- ========================= FOOTER ========================= -->
-<footer class="section-footer  white">
+<footer class="section-footer bg-dark white">
     <div class="container-fluid">
         <section class="footer-top padding-top">
             <div class="row">
