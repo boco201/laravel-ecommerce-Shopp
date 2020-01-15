@@ -15,6 +15,9 @@ Route::view('/', 'site.pages.homepage');
 Route::get('/category/{slug}', 'Site\CategoryController@show')->name('category.show');
 Route::get('/product/{slug}', 'Site\ProductController@show')->name('product.show');
 
+Route::get('/contact', 'Site\ContactFormController@create')->name('contact.create');
+Route::post('/contact', 'Site\ContactFormController@store');
+
 Route::post('/product/add/cart', 'Site\ProductController@addToCart')->name('product.add.cart');
 Route::get('/cart', 'Site\CartController@getCart')->name('checkout.cart');
 Route::get('/cart/item/{id}/remove', 'Site\CartController@removeItem')->name('checkout.cart.remove');
