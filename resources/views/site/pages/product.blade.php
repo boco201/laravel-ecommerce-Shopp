@@ -19,7 +19,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="row no-gutters">
-                            <aside class="col-sm-5 border-right">
+                            <aside class="col-sm-7 border-right">
                                 <article class="gallery-wrap">
                                     @if ($product->images->count() > 0)
                                         <div class="img-big-wrap">
@@ -47,7 +47,7 @@
                                     @endif
                                 </article>
                             </aside>
-                            <aside class="col-sm-7">
+                            <aside class="col-sm-5">
                                 <article class="p-5">
                                     <h3 class="title mb-3">{{ $product->name }}</h3>
                                     <dl class="row">

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Site;
 
 use Cart;
+use Stripe\Stripe;
+use Stripe\Customer;
+use Stripe\Charge;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use App\Services\PayPalService;
@@ -19,6 +22,44 @@ class CheckoutController extends Controller
     {
         $this->payPal = $payPal;
         $this->orderRepository = $orderRepository;
+    }
+
+    public function getStripe()
+    {
+        return view('site.pages.checkout.stripe');
+    }
+
+    public function placeStripe(Request $request)
+    {
+
+        // Before storing the order we should implement the
+        // request validation which I leave it to you
+        $order = $this->orderRepository->storeOrderDetails($request->all());
+
+        // You can add more control here to handle if the order is not stored properly
+      
+              try {
+         Stripe::setApiKey(env('STRIPE_SECRET'));
+
+          $customer = Customer::create(array(
+        'email' => $request->stripeEmail,
+        'source' => $request->stripeToken
+    ));
+
+    $charge = Charge::create(array(
+        'customer' => $customer->id,
+        'amount' => Cart::getSubTotal() * 100,
+        'currency' => 'eur'
+    ));
+
+    Cart::clear();
+
+    return redirect()->route('checkout.cart')->with('message','votre payement est accepté merci pour votre achat, un mail est envoyé');
+
+  } catch (\Exception $ex) {
+    return $ex->getMessage();
+
+}
     }
 
     public function getCheckout()
