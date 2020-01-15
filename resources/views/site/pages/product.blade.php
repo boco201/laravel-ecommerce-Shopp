@@ -116,7 +116,10 @@
                                             </div>
                                         </div>
                                         <hr>
-                                        <button type="submit" class="btn btn-success"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                                        <div>
+                                            
+                                        </div>
+                                        <button type="submit" class="btn btn-success"><i class="fas fa-shopping-cart"></i> Add To Cart</button> <a href="{{ route('checkout.cart')}}" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Voire panier</a>
                                     </form>
                                 </article>
                             </aside>

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Contracts\ProductContract;
 use App\Http\Controllers\Controller;
 use App\Contracts\AttributeContract;
+use App\Models\Product;
 
 class ProductController extends Controller
 {
@@ -19,6 +20,15 @@ class ProductController extends Controller
         $this->productRepository = $productRepository;
         $this->attributeRepository = $attributeRepository;
     }
+
+      public function homepage()
+    {
+
+       $products = $this->productRepository->listProducts();
+
+        return view('site.pages.homepage', compact('products'));
+    }
+
 
     public function show($slug)
     {
@@ -36,5 +46,12 @@ class ProductController extends Controller
         Cart::add(uniqid(), $product->name, $request->input('price'), $request->input('qty'), $options);
 
         return redirect()->back()->with('message', 'Item added to cart successfully.');
+    }
+
+     public function search(Request $request){
+
+        $searchText = $request->get('searchText');
+        $products = Product::where('name',"Like",$searchText."%")->paginate(3);
+        return view("site.pages.homepage", compact('products'));
     }
 }

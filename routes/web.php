@@ -11,12 +11,14 @@
 |
 */
 
-Route::view('/', 'site.pages.homepage');
+Route::get('/', 'Site\ProductController@homepage')->name('site.pages.homepage');
 Route::get('/category/{slug}', 'Site\CategoryController@show')->name('category.show');
 Route::get('/product/{slug}', 'Site\ProductController@show')->name('product.show');
 
 Route::get('/contact', 'Site\ContactFormController@create')->name('contact.create');
 Route::post('/contact', 'Site\ContactFormController@store');
+
+Route::get('/search', 'Site\ProductController@search')->name('searchProducts');
 
 Route::post('/product/add/cart', 'Site\ProductController@addToCart')->name('product.add.cart');
 Route::get('/cart', 'Site\CartController@getCart')->name('checkout.cart');
