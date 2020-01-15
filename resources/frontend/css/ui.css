@@ -366,7 +366,7 @@ article:after,
   /* Standard syntax */ }
 
 .bg {
-  background-color: #f8f8f8 !important; }
+  background-color: #273a43 !important; }
 
 .bg2 {
   background-color: #eceded !important; }
@@ -479,7 +479,7 @@ article:after,
   color: #fff; }
 
 .black, .dark {
-  color: #000; }
+  color: #000 ;}
 
 /* ==================  title helpers ================ */
 .rtl {
