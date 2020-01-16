@@ -3,7 +3,7 @@
 @section('content')
     <section class="section-pagetop bg-dark">
         <div class="container-fluid clearfix">
-            <h2 class="title-page">Checkout</h2>
+            <h2 class="title-page">Checkout Product</h2>
         </div>
     </section>
     <section class="section-content bg padding-y">
