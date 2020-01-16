@@ -2284,7 +2284,7 @@ ul.row, ul.row-sm {
 
 .section-header{
   height: 200px;
-  background-color:#273a43 !important;
+  
 }
 
 .fa-search{
@@ -2303,7 +2303,4 @@ ul.row, ul.row-sm {
     color: #fff;
 }
 
-.section-footer{
-  background-color:#273a43 !important;
-}
 
