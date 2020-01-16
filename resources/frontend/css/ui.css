@@ -2304,7 +2304,15 @@ ul.row, ul.row-sm {
 }
 
 .header-main{
-  background-color: #000;
+  background-color: #000 !important;
+}
+
+.section-footer{
+  background-color: #000 !important;
+}
+
+.bg-dark{
+  background-color: #000 !important;
 }
 
 

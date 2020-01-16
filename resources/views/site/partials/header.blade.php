@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
-                   <p style="color: #fff;">Bénéficier de la remise jusqu'à <span class="remise"> -70%</span> pour les achats depassant 100 €</p>
+                   <p style="color: #000;">Bénéficier de la remise jusqu'à <span class="remise"> -70%</span> pour les achats depassant 100 €</p>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="widgets-wrap d-flex justify-content-end">
