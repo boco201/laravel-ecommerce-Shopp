@@ -50,7 +50,7 @@
         <div id="code_prod_complex" style="padding-top: 20px;">
             <div class="row">
                 @forelse($products as $product)
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <figure class="card card-product">
                             @if ($product->images->count() > 0)
                                 <div class="img-wrap padding-y"><img src="{{ asset('storage/'.$product->images->first()->full) }}" alt=""></div>
