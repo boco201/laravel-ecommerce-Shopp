@@ -351,7 +351,8 @@ article:after,
 
 .bg-white-50 {
   background-color: rgba(255, 255, 255, 0.5); }
-
+.bg-dark-50 {
+   background-color: rgba(0, 0, 0, 0.5); }
 
 .bg-grad-primary {
   background: #3395ff;
@@ -364,7 +365,7 @@ article:after,
   /* Standard syntax */ }
 
 .bg {
-  background-color: #fff !important; }
+   background-color: #f8f8f8 !important; }
 
 .bg2 {
   background-color: #eceded !important; }
@@ -477,7 +478,7 @@ article:after,
   color: #fff; }
 
 .black, .dark {
-  color: #000 ;}
+  color:#000 ;}
 
 /* ==================  title helpers ================ */
 .rtl {
