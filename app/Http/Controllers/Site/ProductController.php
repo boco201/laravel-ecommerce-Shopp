@@ -32,6 +32,7 @@ class ProductController extends Controller
 
     public function show($slug)
     {
+
         $product = $this->productRepository->findProductBySlug($slug);
         $attributes = $this->attributeRepository->listAttributes();
 

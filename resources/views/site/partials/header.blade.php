@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
-                   <p style="color: #000;">Bénéficier de la remise jusqu'à <span class="remise"> -70%</span> pour les achats depassant 100 €</p>
+                   <p style="color: #fff;">Bénéficier de la remise jusqu'à <span class="remise"> -70%</span> pour les achats depassant 100 €</p>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="widgets-wrap d-flex justify-content-end">
@@ -26,13 +26,13 @@
                         @guest
                             <div class="widget-header">
                                 <a href="{{ route('login') }}" class="ml-3 icontext">
-                                    <div class="icon-wrap icon-xs bg-primary round text-white"><i class="fa fa-user"></i></div>
+                                    <div class="icon-wrap icon-xs bg2 round text-secondary"><i class="fa fa-user"></i></div>
                                     <div class="text-wrap"><span>Login</span></div>
                                 </a>
                             </div>
                             <div class="widget-header">
                                 <a href="{{ route('register') }}" class="ml-3 icontext">
-                                    <div class="icon-wrap icon-xs bg-success round text-white"><i class="fa fa-user"></i></div>
+                                    <div class="icon-wrap icon-xs bg2 round text-secondary"><i class="fa fa-user"></i></div>
                                     <div class="text-wrap"><span>Register</span></div>
                                 </a>
                             </div>

@@ -59,17 +59,17 @@
                             @endif
                             <figcaption class="info-wrap">
                                 <h4 class="title"><a href="{{ route('product.show', $product->slug) }}">{{ $product->name }}</a></h4>
-                                <p>{{ str_limit($product->description, 50) }}</p>
+                                <p>{{ str_limit($product->description, 100) }}</p>
                             </figcaption>
                             <div class="bottom-wrap">
-                                <a href="{{ route('product.show', $product->slug) }}" class="btn btn-sm btn-success float-right">View Details</a>
+                                <a href="{{ route('product.show', $product->slug) }}" class="btn btn-sm btn-success float-right">Voire Details</a>
                                 @if ($product->sale_price != 0)
                                     <div class="price-wrap h5">
                                         <span class="price"> {{ config('settings.currency_symbol').$product->sale_price }} </span>
                                         <del class="price-old"> {{ config('settings.currency_symbol').$product->price }}</del>
                                     </div>
                                 @else
-                                    <div class="price-wrap h5">
+                                    <div class="price-wrap h5" style="color: red;font-weight: bold;font-size: 1.7rem;">
                                         <span class="price"> {{ config('settings.currency_symbol').$product->price }} </span>
                                     </div>
                                 @endif

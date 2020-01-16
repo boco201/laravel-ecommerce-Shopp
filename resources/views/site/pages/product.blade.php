@@ -135,7 +135,8 @@
                 </div>
             </div>
         </div>
-                 <div class="container mt-4">
+
+    <div class="container mt-4">
     <h3 style="color: blue; font-weight: bold;font-style: italic;">Votre Opinion sur ce produit! on a besoin!</h3>
     <form method="post" action="/products/comments">
         @csrf
